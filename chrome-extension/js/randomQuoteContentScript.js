@@ -115,7 +115,8 @@ function loadStageTwo() {
             messageBox.action = messageBox.append;
 
             // saying no to injecting quoets in replies for now...
-            /*} else if(messageBox.html() != undefined 
+			// Saying yes!!!
+            } else if(messageBox.html() != undefined 
                     && messageBox.parent().parent().parent().parent().parent().parent().parent().parent().parent().find('[aria-label="Show trimmed content"]').length != 0) {
                 console.info("There's a quote, so let's go ahead and insert a quote before the reply...");
                 messageBox.addClass('sigadded');
@@ -123,7 +124,7 @@ function loadStageTwo() {
                 messageBox.find('.gmail_extra').find('div[dir="ltr"]').append("HRYHRYR");
                 //messageBox = $('[g_editable="true"]').find('div.gmail_quote');
                 messageBox.action = messageBox.before;
-                messageBox=null;*/
+                messageBox=null;
 
         } else {
 
